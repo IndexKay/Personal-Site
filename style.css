@@ -59,4 +59,17 @@ body {
 /* top */
 /*----------------------------------------------*/
 
+.title{
+  color: var(--text);
+}
+
+.pfp{
+
+  width: 40vh;
+  height: 40vh;
+
+  border-radius: 30% 70% 57% 43% / 35% 59% 41% 65%;
+  background-color: linear-gradient(90deg, rgba(0,26,36,1) 0%, rgba(9,118,121,1) 37%, rgba(0,138,255,1) 100%);
+
+}
   
