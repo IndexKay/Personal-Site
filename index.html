@@ -7,24 +7,250 @@
 
         <!-- BOOTSTRAP 5-->
         <!-- Latest compiled and minified CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <!-- Latest compiled JavaScript -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
         <!-- Reponsiveness -->
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
 
         <!-- Ion Icons -->
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
         <!-- Style Sheet (Index) -->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/slider.css">
+
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
 
     </head>
     <body>
-    
+        
+        <div class="hero">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="pfp">
+                <path fill="#2CD1D1" d="M59.3,-20.5C68.1,7.9,60.6,40.4,41.8,53.1C23,65.7,-7.1,58.4,-29,41.9C-51,25.5,-64.8,0,-58.6,-24.8C-52.4,-49.6,-26.2,-73.6,-0.5,-73.5C25.2,-73.3,50.5,-49,59.3,-20.5Z" transform="translate(100 100)" />
+            </svg>
 
+            <div class="textbox">
+                <p class="title-right">My Name Is Kavin I. Lajara</p>
+
+                <p class="text-right">Graphic Designer, Web designer, Full Stack Web Developer, Software Developer</p>
+            </div>
+        </div>
+
+
+        <div class="textbox aboutme">
+            <p class="title-left">About Me:</p>
+
+            <p class="text-left">After having a strong passion for this field of work since i was a child, ive dedicated my later years in learning as much as i could. Now being a Recent graute of a Technical High School majoring in Intonation Technology, ive gained the basic understanding of all the basics, obtained years of experience with many programing languages and the ability to be self taught so i can continue to grow my knowledge in different parts in the field that i haven’t already been introduced to yet. i am a young mind with the hunger for more knowledge and experience for all the opportunities that i can get within this field of work.</p>
+        </div>
+
+
+        <div class="skills">
+
+            <div class="skill-row">
+
+                <div class="skill-column">
+
+                    <div class="skill-titles">
+                        <ion-icon name="desktop-outline" class="skill-icon" ></ion-icon>
+                        <p class="skill-text">UI Design</p>
+                    </div>
+
+                    <div class="skill-titles">
+                        <ion-icon name="phone-portrait-outline" class="skill-icon"></ion-icon>
+                        <p class="skill-text">Front-End</p>
+                    </div>
+                </div>
+
+                <img src="assets/imgs/ball.png" class="ball col-2"/>
+
+                <div class="skill-column">
+                    
+                    <div class="skill-titles">
+                        <ion-icon name="server-outline" class="skill-icon"></ion-icon>
+                        <p class="skill-text">Back-End</p>
+                    </div>
+
+                    <div class="skill-titles">
+                        <ion-icon name="hardware-chip-outline" class="skill-icon"></ion-icon>
+                        <p class="skill-text">Embedded Programing</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-titles">
+                <ion-icon name="brush-outline" class="skill-icon"></ion-icon>
+                <p class="skill-text">Graphic Design</p>
+            </div>
+        </div>
+
+
+        <div class="exp">
+            <p class="title-center">Experience</p>
+
+
+            <canvas id="myChart"></canvas>
+        </div>
+
+
+        <div class="webproject">
+            <div class="textbox" style="width: 40%;">
+                <p class="title-left">Web Projcts:</p>
+                <p class="text-left">These are websites that i designed, including all the graphics, the websites i made here are all under my company Dream Index LLC. I was the lead Full Stack developer for these sites and Graphic Designer. With the help of my Team member we were able to host these websites made for small businesses.</p>
+            </div>
+
+            <div class="container">
+                <input type="radio" name="slider" id="item-1" checked>
+                <input type="radio" name="slider" id="item-2">
+                <input type="radio" name="slider" id="item-3">
+              <div class="cards">
+                <label class="card" for="item-1" id="song-1">
+                  <img src="assets/imgs/web1.png" class="img1" alt="song">
+                </label>
+                <label class="card" for="item-2" id="song-2">
+                  <img src="assets/imgs/web2.png" class="img1" alt="song">
+                </label>
+                <label class="card" for="item-3" id="song-3">
+                  <img src="assets/imgs/web3.png" class="img1" alt="song">
+                </label>
+              </div>
+            </div>
+        </div>
+
+
+        <div class="P1">
+            <div class="container2">
+                <input type="radio" name="slider2" id="i-1" checked>
+                <input type="radio" name="slider2" id="i-2">
+                <input type="radio" name="slider2" id="i-3">
+              <div class="cards2">
+                <label class="card2" for="i-1" id="s-1">
+                  <img src="assets/imgs/1.png" class="img2" alt="song">
+                </label>
+                <label class="card2" for="i-2" id="s-2">
+                  <img src="assets/imgs/2.png" class="img2" alt="song">
+                </label>
+                <label class="card2" for="i-3" id="s-3">
+                  <img src="assets/imgs/3.png" class="img2" alt="song">
+                </label>
+              </div>
+            </div>
+
+            <div class="textbox" style="width: 60%;">
+                <p class="title-right">Omni-Watch:</p>
+                <p class="text-right">The Omni-Watch is a self designed smartwatch based of the device is the cartoon show BEN10.
+                    There were a lot of skills used and learned during the development process:</p>
+                    <br>
+                    <p class="text-right">
+                    Graphic Designing
+                    Programing / Embedded Programing
+                    Physical computing
+                    Electrical prototyping 
+                    CAD 3D Modeling
+                    3D Printing
+                    Schematic / PCB Design</p>
+
+                <button class="button">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                        <span class="button_text">Download Now</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+
+        <div class="P2">
+
+            <div class="textbox" style="width: 60%;">
+                <p class="title-left">Demi-Lab:</p>
+                <p class="text-left">Demi-Lab is a Software I developed with a partner in my junior year of high school for a software development competition that has hosted by NASA Engineers, which I became a finalist and got funded to get get flown out to the Nasa space center in Huston, TX. its purpose was to be a Graphical User Interface for the Nanorack payload system; Allowing astronauts to conduct experiments in space. Developed using Python, a GUI library named Kivy, more libraries for functionally and JSON files to store local data.</p>
+                
+                <button class="button">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                        <span class="button_text">Download Now</span>
+                    </span>
+                </button>
+            </div>
+
+
+            <img class="vid" src="assets/imgs/vid.png"/>
+
+        </div>
+        
+
+        <div class="awards">
+            <p class="title-center">Certifications / Recommendations</p>
+
+            <div class="container">
+                <input type="radio" name="slider3" id="it-1" checked>
+                <input type="radio" name="slider3" id="it-2">
+                <input type="radio" name="slider3" id="it-3">
+              <div class="cards">
+                <label class="card" for="it-1" id="so-1">
+                  <img src="assets/imgs/web1.png" class="img1" alt="song">
+                </label>
+                <label class="card" for="it-2" id="so-2">
+                  <img src="assets/imgs/web2.png" class="img1" alt="song">
+                </label>
+                <label class="card" for="it-3" id="so-3">
+                  <img src="assets/imgs/web3.png" class="img1" alt="song">
+                </label>
+              </div>
+            </div>
+
+        </div>
+
+
+        <div class="socials">
+
+            <p class="title-center">*Socials*</p>
+
+            <div class="links">
+                <div class="iconb">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <p class="social-title">Twitter</p>
+                </div>
+
+                <div class="iconb">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <p class="social-title">Instagram</p>
+                </div>
+
+                <div class="iconb">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                    <p class="social-title">Linkedin</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="resume">
+
+            <div class="pdf">
+                <img src="assets/imgs/Kavin Lajara Resume-1.png"/>
+                <img src="assets/imgs/Kavin Lajara Resume-2.png"/>
+            </div>
+
+            <div class="textbox" style="">
+                <p class="title-right">Resume</p>
+                <p class="text-right">This my Resume free for download for anyone who is interested.</p>
+
+                <button class="button">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                        <span class="button_text">Download Now</span>
+                    </span>
+                </button>
+            </div>
+        </div>
 
     </body>
 </html>

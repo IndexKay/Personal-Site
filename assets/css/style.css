@@ -1,0 +1,404 @@
+
+:root {
+    --background: #222525;
+    --blue: #2CD1D1;
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--background);
+    gap: 340px;    
+  }
+
+  .textbox{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title-right{
+    color: var(--white);
+    font-size: 43px;
+    text-align: right;
+    font-family: 'Cutive Mono', monospace;
+  }
+  .text-right{
+    color: var(--blue);
+    font-size: 32px;
+    text-align: right;
+    font-family: 'Cutive Mono', monospace;
+  }
+  .title-left{
+    color: var(--white);
+    font-size: 43px;
+    text-align: left;
+    font-family: 'Cutive Mono', monospace;
+  }
+  .text-left{
+    color: var(--blue);
+    font-size: 32px;
+    text-align: left;
+    font-family: 'Cutive Mono', monospace;
+  }
+  .title-center{
+    color: var(--white);
+    font-size: 43px;
+    text-align: center;
+    font-family: 'Cutive Mono', monospace;
+  }
+  .text-center{
+    color: var(--blue);
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Cutive Mono', monospace;
+  }
+
+  .button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: #0f1923;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+    margin-top: 20px;
+  }
+  
+  .button::before,
+  .button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid #7D8082;
+    transition: all .15s ease;
+  }
+  
+  .button::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+  
+  .button::after {
+    bottom: 0;
+    border-top-width: 0;
+  }
+  
+  .button:active,
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:active::before,
+  .button:active::after {
+    right: 3px;
+    left: 3px;
+  }
+  
+  .button:active::before {
+    top: 3px;
+  }
+  
+  .button:active::after {
+    bottom: 3px;
+  }
+  
+  .button_lg {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: var(--blue);
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+  }
+  
+  .button_lg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: var(--blue);
+  }
+  
+  .button_lg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: var(--blue);
+    transition: all .2s ease;
+  }
+  
+  .button_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #f04a58;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+  }
+  
+  .button_text {
+    position: relative;
+  }
+  
+  .button:hover {
+    color: var(--blue);
+  }
+  
+  .button:hover .button_sl {
+    width: calc(100% + 15px);
+  }
+  
+  .button:hover .button_lg::after {
+    background-color: #fff;
+  }
+  
+
+/*----------------------------------------------*/
+/* nav */
+/*----------------------------------------------*/
+
+.nav{
+
+}
+
+/*----------------------------------------------*/
+/* hero */
+/*----------------------------------------------*/
+
+.hero{
+  display: flex;
+  flex-direction: row;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  gap: 40px;
+}
+
+.pfp{
+  width: 550px;
+  height: 515px;
+}
+
+/*----------------------------------------------*/
+/* about me */
+/*----------------------------------------------*/
+
+.aboutme{
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+
+/*----------------------------------------------*/
+/* Skills */
+/*----------------------------------------------*/
+
+.skills{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+.ball{
+  width: 70%;
+  height: auto;
+}
+
+.skill-titles{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-icon{
+  font-size: 70px;
+  color: var(--white);
+}
+
+.skill-text{
+  font-size: 24px;
+  color: var(--blue);
+  text-align: center;
+  font-family: 'Cutive Mono', monospace;
+}
+
+.skill-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.skill-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+
+/*----------------------------------------------*/
+/* Experience */
+/*----------------------------------------------*/
+
+.exp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+
+
+/*----------------------------------------------*/
+/* web projects */
+/*----------------------------------------------*/
+
+.webproject{
+  display: flex;
+  justify-content: center;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  gap: 120px;
+}
+
+
+/*----------------------------------------------*/
+/* Project 1 */
+/*----------------------------------------------*/
+
+.P1{
+  display: flex;
+  justify-content: center;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  gap: 120px;
+}
+
+
+/*----------------------------------------------*/
+/* Project 2 */
+/*----------------------------------------------*/
+
+.P2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  gap: 120px;
+}
+
+.vid{
+  width: 40%;
+  height: auto;
+}
+
+/*----------------------------------------------*/
+/* Awards */
+/*----------------------------------------------*/
+
+.awards{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 30%;
+}
+
+/*----------------------------------------------*/
+/* Socials */
+/*----------------------------------------------*/
+.social-title{
+  color: var(--blue);
+  font-size: 43px;
+  text-align: center;
+  font-family: 'Cutive Mono', monospace;
+}
+.socials{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 20%;
+  gap: 100px;
+}
+.socials .links{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 128px;
+}
+.socials .links .iconb{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.socials .links .iconb ion-icon{
+  font-size: 70px;
+  color: var(--white);
+}
+
+
+/*----------------------------------------------*/
+/* Resume */
+/*----------------------------------------------*/
+
+.resume{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  gap: 40px;
+}
+
+.resume .pdf{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.resume .pdf img{
+  width: 60%;
+  height: auto;
+}
