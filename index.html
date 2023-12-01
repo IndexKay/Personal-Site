@@ -27,15 +27,26 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
 
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js" integrity="sha512-7U4rRB8aGAHGVad3u2jiC7GA5/1YhQcQjxKeaVms/bT66i3LVBMRcBI9KwABNWnxOSwulkuSXxZLGuyfvo7V1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
     </head>
     <body>
         <nav>
-            <p>KIL</p>
+            <div class="logo">
+                <p>KIL</p>
+            </div>
+            
 
-            <a></a>
-            <a></a>
-            <a></a>
-            <a></a>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Shop.html">Shop</a></li>
+                    <li><a href="Appointment_1.html">Appointments</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
         </nav>
         
         <div class="hero">
@@ -43,7 +54,7 @@
                 <path fill="#2CD1D1" d="M59.3,-20.5C68.1,7.9,60.6,40.4,41.8,53.1C23,65.7,-7.1,58.4,-29,41.9C-51,25.5,-64.8,0,-58.6,-24.8C-52.4,-49.6,-26.2,-73.6,-0.5,-73.5C25.2,-73.3,50.5,-49,59.3,-20.5Z" transform="translate(100 100)" />
             </svg>
 
-            <div class="textbox">
+            <div class="textbox" style="margin-top: 8%;">
                 <p class="title-right">My Name Is Kavin I. Lajara</p>
 
                 <p class="text-right">Graphic Designer, Web designer, Full Stack Web Developer, Software Developer</p>
@@ -99,10 +110,11 @@
 
 
         <div class="exp">
-            <p class="title-center">Experience</p>
+            <p class="title-center">Total Experience</p>
 
 
-            <canvas id="myChart"></canvas>
+            <canvas id="myChart" class="chart"></canvas>
+            <canvas id="myChart2" class="chart"></canvas>
         </div>
 
 
@@ -249,7 +261,7 @@
 
             <div class="textbox" style="">
                 <p class="title-right">Resume</p>
-                <p class="text-right">This my Resume free for download for anyone who is interested.</p>
+                <p class="text-right">This my Resume for download for anyone who is interested.</p>
 
                 <button class="button">
                     <span class="button_lg">
@@ -261,4 +273,7 @@
         </div>
 
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="assets/js/script.js"></script>
 </html>

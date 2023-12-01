@@ -177,9 +177,55 @@ body {
 /* nav */
 /*----------------------------------------------*/
 
-.nav{
+nav{
+  height: 50px;
+  z-index: 997;
+  transition: all 0.5s;
+  z-index: 2;
+  background-color: var(--blue);
+  opacity: .7;
+}
+.logo{
+  float: left;
+  margin-left: 8%;
+  color: var(--white);
+  font-size: 36px;
+  font-weight: 1000;
+  font-family: 'Cutive Mono', monospace;
+}
+
+.navlinks{
+  float: right;
+  margin-right: 8%;
 
 }
+
+.navlinks ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: right;
+}
+
+.navlinks li {
+  position: relative;
+}
+
+.navlinks a,
+.navlinks a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 24px;
+  color: var(--white);
+  white-space: nowrap;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
 
 /*----------------------------------------------*/
 /* hero */
@@ -191,12 +237,13 @@ body {
   margin-right: 10%;
   margin-left: 10%;
   margin-bottom: 10%;
-  gap: 40px;
+  margin-top: 10%;
+  gap: 30px;
 }
 
 .pfp{
-  width: 550px;
-  height: 515px;
+  width: 90%;
+  height: auto;
 }
 
 /*----------------------------------------------*/
@@ -225,7 +272,7 @@ body {
 }
 
 .ball{
-  width: 70%;
+  width: 80%;
   height: auto;
 }
 
@@ -278,7 +325,9 @@ body {
   margin-bottom: 10%;
 }
 
-
+.chart {
+  margin-bottom: 10%;
+}
 
 /*----------------------------------------------*/
 /* web projects */
@@ -353,6 +402,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-right: 10%;
   margin-left: 10%;
   margin-bottom: 20%;
