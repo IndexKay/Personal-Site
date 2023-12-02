@@ -1,3 +1,4 @@
+
 const ctx = document.getElementById('myChart');
 const ctx2 = document.getElementById('myChart2');
 
